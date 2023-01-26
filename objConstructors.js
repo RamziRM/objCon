@@ -11,6 +11,13 @@ function book(title, author, pages, read) {
     }
 }
 
-function addBookToLibrary() {
+function addBookToLibrary(event) {
+    let title = document.getElementById('title').value;
+    let author = document.getElementById('author').value;
+    let pages = document.getElementById('pages').value;
+    let read = document.getElementById('read').value;
+}
+
+function displayBooks () {
     
 }

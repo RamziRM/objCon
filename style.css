@@ -49,7 +49,7 @@ label {
 /* Style the submit button */
 button[type="submit"] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #00771e;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -80,7 +80,7 @@ table {
 
 /* Style the table headers */
 th {
-    background-color: #4CAF50;
+    background-color: #00771e;
     color: #fff;
     padding: 12px;
     font-size: 16px;
@@ -92,14 +92,6 @@ td {
     padding: 12px;
     font-size: 14px;
     border-bottom: 1px solid #ccc;
-}
-
-/* Style the "Read" cells to be green if the book has been read, red if not */
-td.yes {
-    color: #4CAF50;
-}
-td.no {
-    color: #f44336;
 }
 
 /* Style the form inputs */
@@ -126,7 +118,7 @@ label {
 /* Style the submit button */
 button[type="submit"] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #00771e;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

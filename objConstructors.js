@@ -14,13 +14,13 @@ function book(title, author, pages, read) {
     this.pages = pages;
     this.read = read;
     this.info = () => {
-        let status = this.read ? "Yess" : "No";
+        let status = this.read ? "Yes" : "No";
         console.log(`${this.title} by ${this.author}, ${this.pages} pages, ${status}`);
     }
 }
 
 function addBookToLibrary(event) {
-    // below code = allows for new book to be added now -- with no storage configs yet *(has some errorcodes? - but working)
+    // below event.prevent = allows for new book to be added now -- with no storage configs yet *(has some errorcodes? - but working)
     event.preventDefault();
     let title = document.getElementById('title').value;
     let author = document.getElementById('author').value;
@@ -54,13 +54,22 @@ function displayBooks() {
         authorCell.innerHTML = book.author;
         pagesCell.innerHTML = book.pages;
         readCell.innerHTML = book.read;
+
+        let removeBtn = document.createElement('button');
+        removeBtn.innerHTML = "X";
+        removeBtn.addEventListener('click', () => {
+            myLibrary.splice(i, 1);
+            displayBooks();
+        });
+        row.appendChild(removeBtn);
+
     }
 }
 
 function initializeLibrary() {
-    myLibrary.push(new book("The Hobbit", "J.R.R. Tolkien", 295, false));
-    myLibrary.push(new book("The Lord of the Rings", "J.R.R. Tolkien", 1178, true));
-    myLibrary.push(new book("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 309, true));
+    myLibrary.push(new book("The Hobbit", "J.R.R. Tolkien", 295, 'No'));
+    myLibrary.push(new book("The Lord of the Rings", "J.R.R. Tolkien", 1178, 'Yes'));
+    myLibrary.push(new book("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 309, 'Yes'));
     displayBooks();
 }
 

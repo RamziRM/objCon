@@ -14,7 +14,7 @@ function book(title, author, pages, read) {
     this.pages = pages;
     this.read = read;
     this.info = () => {
-        let status = this.read ? "read" : "not read yet";
+        let status = this.read ? "Yess" : "No";
         console.log(`${this.title} by ${this.author}, ${this.pages} pages, ${status}`);
     }
 }
@@ -25,8 +25,9 @@ function addBookToLibrary(event) {
     let title = document.getElementById('title').value;
     let author = document.getElementById('author').value;
     let pages = document.getElementById('pages').value;
-    let read = document.getElementById('read').value === 'Yes' ? true : false;
-
+    let readCheckbox = document.getElementById('read');
+    let read = readCheckbox.checked ? "Yes" : "No";
+    
     myLibrary.push(new book(title, author, pages, read));
     displayBooks();
 }
@@ -52,7 +53,7 @@ function displayBooks() {
         titleCell.innerHTML = book.title;
         authorCell.innerHTML = book.author;
         pagesCell.innerHTML = book.pages;
-        readCell.innerHTML = book.read ? 'True' : 'False';
+        readCell.innerHTML = book.read;
     }
 }
 

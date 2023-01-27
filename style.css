@@ -1,0 +1,135 @@
+/* Set the background color and font */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the form on the page */
+#book-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+#new-book {
+    width: 100%;
+    background-color: #00771e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 25%;
+}
+
+/* Style the form inputs */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000;
+}
+
+/* Style the form labels */
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style the submit button when hovered */
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Set the background color and font */
+body {
+    background-color: #333333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+/* Style the table headers */
+th {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the table cells */
+td {
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the "Read" cells to be green if the book has been read, red if not */
+td.yes {
+    color: #4CAF50;
+}
+td.no {
+    color: #f44336;
+}
+
+/* Style the form inputs */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #f2f2f2;
+}
+
+/* Style the form labels */
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #000;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px
+}
